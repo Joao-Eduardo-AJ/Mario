@@ -20,7 +20,7 @@
 
 .pipe {
     position: absolute;
-    width: 80px;
+    width: 25px;
 }
 
 #tubo {
@@ -41,40 +41,34 @@
 }
 
 .mario {
-    width: 150px;
+    width: 55px;
     position: absolute;
     bottom: 0%;
 }
 
 .jump {
-    animation: jump 500ms linear;
+    animation: jump 500ms ease-out;
 }
 
 @keyframes jump {
     0% {
         bottom: 0%;
     } 
+    20% {
+        bottom: 13%;
+    }
     30% {
-        bottom: 25%;
+        bottom: 13%;
     }
-    38% {
-        bottom: 30%;
+    40% {
+        bottom: 13%;
     }
-    54%{
-        bottom: 32%;
+    50% {
+        bottom: 13%;
     }
-    50%{
-        bottom: 32%;
-    }
-    54%{
-        bottom: 32%;
-    }
-    68% {
-        bottom:30%
-    }
-    78% {
-        bottom: 25%;
-    }
+    60% {
+        bottom: 13%;
+    } 
     100% {
         bottom: 0%;
     }
