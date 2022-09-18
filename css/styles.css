@@ -29,7 +29,7 @@ body, html {
 
 #tubo {
     animation-name: pipe;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
@@ -51,7 +51,7 @@ body, html {
 }
 
 .jump {
-    animation: jump 500ms ease-out;
+    animation: jump 600ms ease-out;
 }
 
 @keyframes jump {
