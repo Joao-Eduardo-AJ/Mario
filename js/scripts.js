@@ -14,13 +14,19 @@ const loop = setInterval(() => {
     const pipePosition = tubo.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
-    if (marioPosition < 40 && pipePosition <= 45 && pipePosition >=  0) {
+    if (marioPosition < 30 && pipePosition <= 124 && pipePosition >=  80) {
 
         tubo.style.animation = 'none';
         tubo.style.left = `${pipePosition}px`;
         tubo.style.bottom = 0;
-    }
 
+        mario.style.bottom = `${marioPosition}px`;
+        mario.src = './images/game-over.png';
+        mario.classList.add('dead');
+
+        clearInterval(loop);
+
+    }
 }, 10);
 
 document.addEventListener('keydown', jump);

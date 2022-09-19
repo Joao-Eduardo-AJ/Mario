@@ -15,11 +15,12 @@ body, html {
 }
 
 .game-board {
-    width: 80%;
+    width: 100vw;
     height: 500px;
     border: 1px solid var(--cor1);
     margin: 0px auto;
     position: relative;
+    overflow: hidden;
 }
 
 .pipe {
@@ -33,7 +34,6 @@ body, html {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-
 @keyframes pipe {
     from {
         right: -14%;
@@ -48,32 +48,76 @@ body, html {
     width: 55px;
     position: absolute;
     bottom: 0%;
+    left: 20%;
 }
 
 .jump {
     animation: jump 600ms ease-out;
 }
-
 @keyframes jump {
     0% {
         bottom: 0%;
     }
     10% {
-        bottom: 5%;
+        bottom: 6%;
     }
     20% {
-        bottom: 8%;
+        bottom: 9%;
     }
     30% {
-        bottom: 10%;
+        bottom: 11%;
     }
     40% {
-        bottom: 11%;
+        bottom: 12%;
     }
     50% {
-        bottom: 11%;
+        bottom: 12%;
     } 
     100% {
         bottom: 0%;
+    }
+}
+
+.dead {
+    animation: dead 0.9s linear, deadmove 0.4s steps(1) alternate;
+    width: 31px;
+    left: 24%;
+}
+@keyframes dead {
+    0% {
+        bottom: 0%;
+    }
+    10% {
+        bottom: 4%;
+    }
+    20% {
+        bottom: 6%;
+    }
+    30% {
+        bottom: 7%;
+    }
+    40% {
+        bottom: 8%;
+    }
+    50% {
+        bottom: 2%;
+    }  
+    100% {
+        bottom: -20%;
+    }
+}
+
+@keyframes deadmove {
+    0% {
+        transform: scaleX(1);
+    } 
+    30% {
+        transform: scaleX(-1)
+    }
+    60% {
+        transform: scaleX(1)
+    }
+    90% {
+        transform: scaleX(-1)
     }
 }
