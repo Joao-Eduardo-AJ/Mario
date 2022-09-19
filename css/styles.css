@@ -12,15 +12,70 @@
 
 body, html {
     height: 100vh;
+    overflow: hidden;
 }
 
 .game-board {
     width: 100vw;
     height: 500px;
-    border: 1px solid var(--cor1);
     margin: 0px auto;
     position: relative;
     overflow: hidden;
+    background-image: linear-gradient(to top, #e3fffa, rgb(104, 220, 255));
+}
+
+#cloud {
+    position: absolute;
+    top: 10%;
+    width: 800%;
+    height: 260px;
+    background: url('../images/clouds.png');
+    background-size: contain;
+    animation: cloud 100s infinite linear;
+}
+@keyframes cloud {
+    from {
+        left: 0%;
+    } to {
+        left: -600%;
+    }
+}
+
+
+#block {
+    display: block;
+    position: absolute;
+    top: 72%;
+    width: 17.2%;
+    height: 3vh;
+    background: url('../images/floor.png');
+    background-size: contain;
+    animation: block 3.54s infinite linear; 
+}
+@keyframes block {
+    from {
+        left: 200%;
+    } 
+    to {
+        left: -20%;
+    }
+}
+
+#grass {
+    display: block;
+    position: absolute;
+    width: 200%;
+    height: 3vh;
+    background: url('../images/Floor1.png');
+    background-size: contain;
+    animation: grass 1.45s infinite linear; 
+}
+@keyframes grass {
+    from {
+        left: -10%;
+    } to {
+        left: -100%;
+    }
 }
 
 .pipe {
@@ -30,7 +85,7 @@ body, html {
 
 #tubo {
     animation-name: pipe;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
