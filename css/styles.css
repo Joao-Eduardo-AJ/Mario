@@ -8,11 +8,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 body, html {
     height: 100vh;
-    overflow: hidden;
 }
 
 .game-board {
@@ -20,7 +20,6 @@ body, html {
     height: 500px;
     margin: 0px auto;
     position: relative;
-    overflow: hidden;
     background-image: linear-gradient(to top, #e3fffa, rgb(104, 220, 255));
 }
 
