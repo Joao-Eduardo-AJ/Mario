@@ -22,9 +22,10 @@ const loop = setInterval(() => {
     const mariodeadPosition = mario.offsetLeft;
     const grassPosition = mario.offsetRight;
     const dirtPosition = dirt.offsetRight;
+
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
-    if (marioPosition < 333 && pipePosition <= 112 && pipePosition >=  66) {
+    if (marioPosition < 269 && pipePosition <= 132 && pipePosition >= 80) {
 
         cloud.style.animation = 'none';
         cloud.style.left = `${cloudPosition}px`;
@@ -37,9 +38,7 @@ const loop = setInterval(() => {
         dirt.style.animation = 'none';
         dirt.style.left = `${dirtPosition}px`;
 
-        mario.style.left = `${mariodeadPosition+17}px`;
-
-
+        mario.style.left = `${mariodeadPosition + 17}px`;
 
         mario.src = './images/game-over.png';
         mario.classList.add('dead');
@@ -47,8 +46,8 @@ const loop = setInterval(() => {
         clearInterval(loop);
 
         setTimeout(() => {
-        document.location.reload(true)
-    }, 890)
+            document.location.reload(true)
+        }, 890)
 
     }
 }, 10);
