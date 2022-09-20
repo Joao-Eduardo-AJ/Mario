@@ -18,7 +18,7 @@ body, html {
 }
 
 .game-board {
-    max-width: 420px;
+    width: 340px;
     height: 100vh;
     margin: 0px auto;
     position: relative;
@@ -47,7 +47,7 @@ body, html {
     display: block;
     position: absolute;
     top: 55%;
-    width: 21.2%;
+    width: 17.4%;
     height: 3vh;
     background: url('../images/block.png');
     background-size: contain;
@@ -81,7 +81,7 @@ body, html {
     background: url('../images/dirt.png') repeat;
     background-size: 25px;
     animation: grass 1.45s infinite linear; 
-    bottom: 30%;
+    bottom: 27.55%;
     transform: translatey(100%);
 }
 
@@ -150,7 +150,7 @@ body, html {
     animation: dead 0.9s ease-out, deadmove 0.4s steps(1) alternate;
     width: 30px;
 }
-@keyframes dead {
+@keyframes ded {
     0% {
         bottom: 30%;
     }
