@@ -19,7 +19,7 @@ body, html {
 
 .game-board {
     margin:auto; 
-    max-width: 386px;
+    max-width: 390px;
     width: 100vw;
     max-height: 766px;
     height: 100vh;
@@ -29,7 +29,7 @@ body, html {
 
 #cloud {
     position: absolute;
-    top: 10%;
+    top: 15%;
     width: 800%;
     height: 35%;
     background: url('../images/clouds.png');
@@ -49,7 +49,7 @@ body, html {
     display: block;
     position: absolute;
     top: 45%;
-    width: 23.4%;
+    width: 18%;
     height: 3vh;
     background: url('../images/block.png');
     background-size: contain;
@@ -61,6 +61,20 @@ body, html {
     } 
     to {
         left: -20%;
+    }
+}
+
+#castle {
+    width: 75%;
+    position: absolute;
+    bottom: 29%;
+    animation: castle 20s infinite linear;
+}
+@keyframes castle {
+    from {
+        right: -100%;
+    } to {
+        right: 110%;
     }
 }
 
@@ -115,16 +129,16 @@ body, html {
 }
 
 #bush {
-    animation-name: pipe;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    position: absolute;
+    bottom: 29%;
+    width: 25%;
+    animation: bush 2.57s linear infinite;
 }
 @keyframes bush {
     from {
-        right: -14%;
+        right: -40%;
     } to {
-        right: 110%;
+        right: 120%;
     }
 }
 
