@@ -46,16 +46,16 @@ body, html {
 #block {
     display: block;
     position: absolute;
-    top: 55%;
+    top: 40%;
     width: 17.2%;
     height: 3vh;
-    background: url('../images/floor.png');
+    background: url('../images/block.png');
     background-size: contain;
     animation: block 3.54s infinite linear; 
 }
 @keyframes block {
     from {
-        left: 200%;
+        left: 100%;
     } 
     to {
         left: -20%;
@@ -66,13 +66,25 @@ body, html {
     display: block;
     position: absolute;
     width: 200%;
-    height: 3vh;
-    background: url('../images/Floor1.png');
-    background-size: contain;
+    height: 30vh;
+    background: url('../images/Floor1.png') repeat-x;
+    background-size: 25px;
     animation: grass 1.45s infinite linear; 
     bottom: 30%;
     transform: translatey(100%);
 }
+#dirt {
+    display: block;
+    position: absolute;
+    width: 200%;
+    height: 30vh;
+    background: url('../images/dirt.png') repeat;
+    background-size: 25px;
+    animation: grass 1.45s infinite linear; 
+    bottom: 30%;
+    transform: translatey(100%);
+}
+
 @keyframes grass {
     from {
         left: -10%;
@@ -136,9 +148,9 @@ body, html {
 
 .dead {
     animation: dead 0.9s ease-out, deadmove 0.4s steps(1) alternate;
-    width: 31px;
+    width: 30px;
 }
-@keyframes dad {
+@keyframes dead {
     0% {
         bottom: 30%;
     }

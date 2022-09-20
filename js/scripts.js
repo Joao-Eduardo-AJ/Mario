@@ -4,6 +4,7 @@ const tubo = document.querySelector('.pipe');
 const grass = document.querySelector('#grass')
 const block = document.querySelector('#block')
 const cloud = document.querySelector('#cloud')
+const dirt = document.querySelector('#dirt')
 
 const jump = () => {
     mario.classList.add('jump');
@@ -19,7 +20,8 @@ const loop = setInterval(() => {
     const pipePosition = tubo.offsetLeft;
     const blockPosition = block.offsetLeft;
     const mariodeadPosition = mario.offsetLeft;
-    const grassPosition = mario.offsetLeft;
+    const grassPosition = mario.offsetRight;
+    const dirtPosition = dirt.offsetRight;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
     if (marioPosition < 330 && pipePosition <= 145 && pipePosition >=  97) {
@@ -32,6 +34,10 @@ const loop = setInterval(() => {
         grass.style.left = `${grassPosition}px`;
         tubo.style.animation = 'none';
         tubo.style.left = `${pipePosition}px`;
+        dirt.style.animation = 'none';
+        dirt.style.left = `${dirtPosition}px`;
+
+        mario.style.left = `${mariodeadPosition+17}px`;
 
 
 
@@ -42,7 +48,7 @@ const loop = setInterval(() => {
 
         setTimeout(() => {
         document.location.reload(true)
-    }, 850)
+    }, 890)
 
     }
 }, 10);
