@@ -7,7 +7,7 @@ Utilizando elementos avançados em CSS e JavaScript, trouxe quase que a experiê
 
 Aqui está o link para visualizar o projeto e acompanhar minha evolução!
 
-https://joao-eduardo-aj.github.io/Mario/
+https://joao-eduardo-aj.github.io/MarioJumper/
 
 Obrigado pela visita!<br>
 [@LinkedIn](https://www.linkedin.com/in/joao-eduardo-2000s/) <br>
