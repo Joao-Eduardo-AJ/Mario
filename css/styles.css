@@ -19,7 +19,7 @@ body, html {
 
 .game-board {
     margin:auto; 
-    max-width: 396px;
+    max-width: 400px;
     width: 100vw;
     max-height: 766px;
     height: 100vh;
