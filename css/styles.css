@@ -29,7 +29,7 @@ body, html {
     top: 10%;
     width: 800%;
     height: 35%;
-    background: url('../images/clouds.png');
+    background: black url('../images/clouds.png');
     background-size: contain;
     animation: cloud 100s infinite linear;
 }
