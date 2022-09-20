@@ -19,7 +19,7 @@ body, html {
 
 .game-board {
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     margin: 0px auto;
     position: relative;
     background-image: linear-gradient(to top, #e3fffa, rgb(104, 220, 255));
@@ -46,7 +46,7 @@ body, html {
 #block {
     display: block;
     position: absolute;
-    top: 72%;
+    top: 55%;
     width: 17.2%;
     height: 3vh;
     background: url('../images/floor.png');
@@ -70,7 +70,8 @@ body, html {
     background: url('../images/Floor1.png');
     background-size: contain;
     animation: grass 1.45s infinite linear; 
-    bottom: 0;
+    bottom: 30%;
+    transform: translatey(100%);
 }
 @keyframes grass {
     from {
@@ -83,8 +84,8 @@ body, html {
 .pipe {
     position: absolute;
     width: 25px;
+    bottom: 30%;
 }
-
 #tubo {
     animation-name: pipe;
     animation-duration: 2s;
@@ -94,17 +95,15 @@ body, html {
 @keyframes pipe {
     from {
         right: -14%;
-        bottom: 0%;
     } to {
         right: 110%;
-        bottom: 0%;
     }
 }
 
 .mario {
     width: 55px;
     position: absolute;
-    bottom: 0%;
+    bottom: 30%;
     left: 20%;
 }
 
@@ -113,56 +112,56 @@ body, html {
 }
 @keyframes jump {
     0% {
-        bottom: 0%;
+        bottom: 30%;
     }
     10% {
-        bottom: 6%;
+        bottom: 33%;
     }
     20% {
-        bottom: 9%;
+        bottom:35%;
     }
     30% {
-        bottom: 11%;
+        bottom: 36%;
     }
     40% {
-        bottom: 12%;
+        bottom: 36%;
     }
     50% {
-        bottom: 12%;
+        bottom: 36%;
     } 
     100% {
-        bottom: 0%;
+        bottom: 30%;
     }
 }
 
 .dead {
-    animation: dead 0.9s linear, deadmove 0.4s steps(1) alternate;
+    animation: dead 0.9s ease-out, deadmove 0.4s steps(1) alternate;
     width: 31px;
-    left: 24%;
 }
-@keyframes dead {
+@keyframes dad {
     0% {
-        bottom: 0%;
+        bottom: 30%;
     }
     10% {
-        bottom: 4%;
+        bottom: 33%;
     }
     20% {
-        bottom: 6%;
+        bottom:35%;
     }
     30% {
-        bottom: 7%;
+        bottom: 36%;
     }
     40% {
-        bottom: 8%;
+        bottom: 36%;
     }
     50% {
-        bottom: 2%;
-    }  
+        bottom: 36%;
+    } 
     100% {
-        bottom: -20%;
+        bottom: 24%;
     }
 }
+
 
 @keyframes deadmove {
     0% {
