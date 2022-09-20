@@ -25,7 +25,7 @@ const loop = setInterval(() => {
 
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
-    if (marioPosition < 269 && pipePosition <= 132 && pipePosition >= 80) {
+    if (marioPosition < 333 && pipePosition <= 132 && pipePosition >= 80) {
 
         cloud.style.animation = 'none';
         cloud.style.left = `${cloudPosition}px`;

@@ -17,10 +17,10 @@ body, html {
 }
 
 .game-board {
-    margin: 80px auto;
+    margin:auto;
     max-width: 440px;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     position: relative;
     background-image: linear-gradient(to top, #e3fffa, rgb(104, 220, 255));
 }
@@ -46,7 +46,7 @@ body, html {
 #block {
     display: block;
     position: absolute;
-    top: 55%;
+    top: 45%;
     width: 17.4%;
     height: 3vh;
     background: url('../images/block.png');
@@ -128,19 +128,19 @@ body, html {
         bottom: 30%;
     }
     10% {
-        bottom: 33%;
+        bottom: 35%;
     }
     20% {
-        bottom:35%;
+        bottom:39%;
     }
     30% {
-        bottom: 36%;
+        bottom: 41%;
     }
     40% {
-        bottom: 36%;
+        bottom: 42%;
     }
     50% {
-        bottom: 36%;
+        bottom: 42%;
     } 
     100% {
         bottom: 30%;
