@@ -19,7 +19,7 @@ body, html {
 
 .game-board {
     width: 100vw;
-    height: 500px;
+    height: 70vh;
     margin: 0px auto;
     position: relative;
     background-image: linear-gradient(to top, #e3fffa, rgb(104, 220, 255));
@@ -70,6 +70,7 @@ body, html {
     background: url('../images/Floor1.png');
     background-size: contain;
     animation: grass 1.45s infinite linear; 
+    bottom: 0;
 }
 @keyframes grass {
     from {
