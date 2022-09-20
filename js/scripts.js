@@ -7,9 +7,15 @@ const cloud = document.querySelector('#cloud');
 const dirt = document.querySelector('#dirt');
 const bush = document.querySelector('#bush')
 const castle = document.querySelector('#castle')
+var cont = document.querySelector('#count')
+
+
+var soma = Number(cont.textContent)
 
 const jump = () => {
     mario.classList.add('jump');
+    soma += 1
+    cont.textContent = soma
 
     setTimeout(() => {
         mario.classList.remove('jump');
@@ -29,7 +35,7 @@ const loop = setInterval(() => {
 
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
-    if (marioPosition < 262 && pipePosition <= 117 && pipePosition >= 65) {
+    if (marioPosition < 262 && pipePosition <= 118 && pipePosition >= 65) {
 
         cloud.style.animation = 'none';
         cloud.style.left = `${cloudPosition}px`;
@@ -55,7 +61,7 @@ const loop = setInterval(() => {
 
         setTimeout(() => {
             document.location.reload(true)
-        }, 1000)
+        }, 860)
 
     }
 }, 10);

@@ -4,6 +4,11 @@
     --cor1: #333;
 }
 
+@font-face {
+    font-family: mario;
+    src: url(../fonts/Super-Mario-World.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -21,10 +26,23 @@ body, html {
     margin:auto; 
     max-width: 400px;
     width: 100vw;
-    max-height: 766px;
+    max-height: 768px;
     height: 100vh;
     position: relative;
     background-image: linear-gradient(to top, #e3fffa, rgb(104, 220, 255));
+}
+
+#count {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    color: rgb(255, 166, 0);
+    font-family: mario;
+    font-weight: 900;
+    font-size: 5em;
+    font-style: italic;
+    text-align: center;
+    padding: 6%;
 }
 
 #cloud {
