@@ -12,13 +12,16 @@
 }
 
 body, html {
+    background-image: linear-gradient(to bottom,rgb(112, 222, 255) 10%, #bdf5ff 54% ,#C18E5A 40% );
     height: 100vh;
     width: 100vw;
 }
 
 .game-board {
     margin:auto; 
+    max-width: 386px;
     width: 100vw;
+    max-height: 766px;
     height: 100vh;
     position: relative;
     background-image: linear-gradient(to top, #e3fffa, rgb(104, 220, 255));
@@ -46,7 +49,7 @@ body, html {
     display: block;
     position: absolute;
     top: 45%;
-    width: 18%;
+    width: 23.4%;
     height: 3vh;
     background: url('../images/block.png');
     background-size: contain;
@@ -104,6 +107,20 @@ body, html {
     animation-timing-function: linear;
 }
 @keyframes pipe {
+    from {
+        right: -14%;
+    } to {
+        right: 110%;
+    }
+}
+
+#bush {
+    animation-name: pipe;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes bush {
     from {
         right: -14%;
     } to {
